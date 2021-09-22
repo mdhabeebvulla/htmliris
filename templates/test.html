@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Form</title>
+</head>
+<body align='center' bgcolor='grey'>
+<form method="post">
+<table align = 'center'>
+    <tr><td>Enter Petal Length</td><td><input type="text" name="num1" value="{{ num1 }}"/></td></tr>
+	<tr><td>Enter Petal Width</td><td><input type="text" name="num2" value="{{ num2 }}"/></td></tr>
+	<tr><td>Enter Sepal Length</td><td><input type="text" name="num3" value="{{ num3 }}"/></td></tr>
+	<tr><td>Enter Sepal Width</td><td><input type="text" name="num4" value="{{ num4 }}"/></td></tr>
+	<tr><td colspan =2><input type="submit" value='predict iris'></td></tr>
+	</table>
+</form>
+<p>Prediction of iris Flower: {{ result }}</p>
+</body>
+</html>
